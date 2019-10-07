@@ -7,5 +7,9 @@ def my_all?(collection)
    return_val << yield(collection[i])
     i += 1
   end
-  return_val
+  if return_val.include?(true)
+    true
+  else
+    false
+  end
 end
